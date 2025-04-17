@@ -17,7 +17,7 @@ jobs:
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
     - name: Build Docker image
-      run: docker build -t yogesh619/quicklearn-repo/my-app:latest .
+      run: docker build -t yogesh619/quicklearn-repo:my-app-latest .
 
     - name: Push Docker image
-      run: docker push yogesh619/quicklearn-repo/my-app:latest
+      run: docker push yogesh619/quicklearn-repo:my-app-latest
