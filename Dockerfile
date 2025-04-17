@@ -6,7 +6,7 @@
  RUN apt-get install unzip -y
  RUN apt-get install git -y
  WORKDIR /tmp
- RUN wget https://github.com/yogesh-quicklearn/qc-new-repo/blob/d868d9976b701a80524d6ce72e36a9cad68a763a/vinayproject-master.zip
+ RUN wget https://github.com/vinayRaj98/vinayproject/archive/master.zip
  RUN unzip master.zip
  RUN cp -r vinayproject-master/* /var/www/html/
  EXPOSE 80
