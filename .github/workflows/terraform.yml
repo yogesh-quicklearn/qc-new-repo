@@ -13,8 +13,8 @@ jobs:
 
     env:
       GOOGLE_CLOUD_KEYFILE_JSON: ${{ secrets.GCP_CREDENTIALS }}
-      GOOGLE_PROJECT: your-gcp-project-id
-      TF_VAR_project_id: your-gcp-project-id
+      GOOGLE_PROJECT: booming-pride-452614-m5
+      TF_VAR_project_id: booming-pride-452614-m5
 
     steps:
     - name: Checkout code
