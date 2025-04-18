@@ -4,13 +4,13 @@ provider "google" {
 }
 
 resource "google_compute_network" "vpc_network" {
-  name                    = "my-vpc-yogesh"
+  name                    = "myvpc"
   auto_create_subnetworks = false
   routing_mode            = "REGIONAL"
 }
 
 resource "google_compute_subnetwork" "subnet" {
-  name          = "my-subnet-yogesh"
+  name          = "mysubnet"
   ip_cidr_range = "15.1.0.0/24"
   region        = "us-central1"
   network       = google_compute_network.vpc_network.id
