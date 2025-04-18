@@ -1,0 +1,5 @@
+project_id   = "booming-pride-452614-m5"
+region       = "us-central1"
+vpc_name     = "my-vpc-new1"
+subnet_name  = "my-subnet-new1"
+subnet_cidr  = "10.1.0.0/24"
